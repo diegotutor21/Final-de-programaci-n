@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/spinner.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <section class="container">
+      <header><b>Formulario de Registro</b></header>
+      <form class="form" action="#">
+        <div class="input-box">
+          <label>Nombre Completo</label>
+          <input required="" placeholder="Ingresa tu nombre completo" type="text" />
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Número de Teléfono</label>
+            <input required="" placeholder="Ingresa tu número de teléfono" type="telephone" maxlength="10" />
+          </div>
+          <div class="input-box">
+            <label>Fecha de Nacimiento</label>
+            <input required="" placeholder="Ingresa tu fecha de nacimiento" type="date" />
+          </div>
+        </div>
+        <div class="gender-box">
+          <label>Género</label>
+          <div class="gender-option">
+            <div class="gender">
+              <input checked="" name="gender" id="check-male" type="radio" />
+              <label for="check-male">Masculino</label>
+            </div>
+            <div class="gender">
+              <input name="gender" id="check-female" type="radio" />
+              <label for="check-female">Femenino</label>
+            </div>
+            <div class="gender">
+              <input name="gender" id="check-other" type="radio" />
+              <label for="check-other">Prefiero no decir</label>
+            </div>
+            <div class="gender">
+              <input name="gender" id="check-other" type="radio" />
+              <label for="check-other">Otro</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Dirección</label>
+          <input required="" placeholder="Ingresa tu dirección" type="text" />
+          <div class="column">
+            <div class="select-box">
+              <select class="select" required="">
+                <option hidden="">País</option>
+                <option>EE. UU.</option>
+                <option>Reino Unido</option>
+                <option>Alemania</option>
+                <option>Japón</option>
+                <option>Argentina</option>
+              </select>
+            </div>
+            <input required="" placeholder="Ingresa tu ciudad" type="text" />
+          </div>
+        </div>
+        <button>Enviar</button>
+      </form>
+    </section>
+
+    <div class="hidden justify-center mt-10">
+      <div class="spinner"></div>
+    </div>
+    
+    <script src="js/app.js"></script>
+  </body>
+</html>
